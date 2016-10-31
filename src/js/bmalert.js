@@ -3,7 +3,7 @@
 
 (function(window,document){
   'use strict';
-
+  /*  main BM classes */
   window.bmalertClasses = {
     modal: 'bmalert-container',
     confirm: 'bmalert-confirm',
