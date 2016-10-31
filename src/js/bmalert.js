@@ -3,13 +3,13 @@
 
 (function(window, document) {
   'use strict';
-
+  /*  main BM classes */
   window.bmalertClasses = {
     modal: 'bmalert-container',
     confirm: 'bmalert-confirm',
     cancel: 'bmalert-cancel'
   };
-
+  /*  main BM IDs */
   window.bmalertIDs = {
     bm: 'BM_x5F_Logo',
     loader: 'bm-loader'
