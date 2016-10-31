@@ -28,7 +28,7 @@
     clickOutsideToClose: false,
     closeOnEscPressed: false
   };
-  /* shows the modasl */
+  /* shows the modal */
   function showModal() {
     var modal = getModal();
     if (arguments[0] === undefined) {
