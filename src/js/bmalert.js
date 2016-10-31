@@ -317,7 +317,7 @@
       '<div id="bmalert-btns">' +
       '<button id="bmalert-cancel" class="bmalert-cancel">Si</button>' +
       '<button id="bmalert-confirm" class="bmalert-confirm">No</button>' +
-      '</div' +
+      '</div>' +
       '</div>';
     var bmalertWrap = document.createElement('div');
     bmalertWrap.className = window.bmalertClasses.modal;
