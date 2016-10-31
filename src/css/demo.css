@@ -24,8 +24,8 @@ html, body {
 .bm-demo-body code {
     border-radius: 5px;
 }
-.bm-demo-body button:hover {
-    background: #6da72b !important;
+button:hover {
+    background: #6da72b;
 }
 button {
     color: white;

@@ -3,6 +3,7 @@ BMAlert [![Build Status](https://travis-ci.org/Boletomovil/bmalert.svg?branch=ma
 
 Javascript's alert is boring, so this is our shot at branding it.
 
+[Online Demo](https://boletomovil.github.io/bmalert/)
 ---------------------------------------------------------
 
 Usage
