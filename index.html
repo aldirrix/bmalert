@@ -2,10 +2,57 @@
 <html>
 <head>
 	<title>BMAlert</title>
-	<link rel="stylesheet" type="text/css" href="dist/bmalert.css">
+    <link rel="stylesheet" type="text/css" href="dist/bmalert.css">
+    <link rel="stylesheet" type="text/css" href="src/css/demo.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    <link rel="shortcut icon" href="./favicon.png">
 </head>
 <body>
+    <div class="bm-demo-header">
+        <h1>BMalert</h1>
+        <h2>A branded replacement for javascript's alert.</h2>
+    </div>
+    <div class="bm-demo-body">
+        <h3 class="">To use bmalert, import bmalert's css and js files to your project:</h3>
+        <pre><code class="html"><<!---->link rel="stylesheet" type="text/css" href="path/to/bmalert.css"></code></pre>
+        <pre><code class="html"><<!---->script type="text/javascript" src="path/to/bmalert.js"><<!---->/script></code></pre>
+        <h3>Then, simply call bmalert's global variable:</h3>
+        <button onclick="bmalert('Hello World!')">Demo</button>
+        <pre><code class="javascript">bmalert('Hello World!')"</code></pre>
+        <h3>Which can also receive an alert state as a second argument:</h3>
+        <button style="margin-top:4rem;" onclick="bmalert('Error','error')">Error</button>
+        <pre><code class="javascript">bmalert('Error','error')"</code></pre>
+        <button style="margin-top:4rem;" onclick="bmalert('Warning','warning')">Warning</button>
+        <pre><code class="javascript">bmalert('Warning','warning')"</code></pre>
+        <button style="margin-top:4rem;" onclick="bmalert('Loading','loading')">Loading</button>
+        <pre><code class="javascript">bmalert('Loading','loading')"</code></pre>
+        <button style="margin-top:4rem;" onclick="bmalert('Complete','complete')">Complete</button>
+        <pre><code class="javascript">bmalert('Complete','complete')"</code></pre>
+        <button style="margin-top:4rem;" onclick="bmalert('None','none')">None</button>
+        <pre><code class="javascript">bmalert('None','none')"</code></pre>
+        <h3>Or configure the alert to match your needs:</h3>
 
-<script type="text/javascript" src="dist/bmalert.js"></script>
+        <button style="margin-top:1rem;" onclick="bmalert({title: 'Custom Alert', alertState: 'complete',cancelButtonText: 'Cancel', confirmButtonText: 'OK', cancelButtonCallback: function(){console.log('cancel')}, confirmButtonCallback: function(){console.log('confirm')}, showCancel: true, showConfirm: true, closeOnConfirm: true, clickOutsideToClose: true })">Custom</button>
+        <pre><code class="javascript">
+            var bmparams = {
+                title: 'Custom Alert',
+                alertState: 'complete', // complete|loading|warning|error|none
+                cancelButtonText: 'Cancel',
+                confirmButtonText: 'OK',
+                cancelButtonCallback: function(){},
+                confirmButtonCallback: function(){},
+                showCancel: false,
+                showConfirm: true,
+                closeOnConfirm: true,
+                clickOutsideToClose: true
+            };
+
+            bmalert(bmparams);
+        </code></pre>
+    </div>
+
+    <script type="text/javascript" src="dist/bmalert.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
