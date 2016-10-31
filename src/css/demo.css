@@ -24,6 +24,9 @@ html, body {
 .bm-demo-body code {
     border-radius: 5px;
 }
+.bm-demo-body h3 {
+    margin-top: 3rem;
+}
 button:hover {
     background: #6da72b;
 }
