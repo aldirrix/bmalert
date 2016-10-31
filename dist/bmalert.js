@@ -71,7 +71,7 @@
 	    showCancel: false,
 	    showConfirm: true,
 	    closeOnConfirm: true,
-	    clickOutsideToClose: false
+	    clickOutsideToClose: true
 	  };
 	
 	  function showModal() {
