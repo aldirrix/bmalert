@@ -14,7 +14,7 @@
     bm: 'BM_x5F_Logo',
     loader: 'bm-loader'
   };
-
+  /*  state params for BMalert */
   var defaultParams = {
     title: '',
     alertState: 'complete',
